@@ -207,24 +207,6 @@ app.get('/Sponge', (request, response) => {
 })
 
 
-// Return listIndex as JSON.
-var listIndex = 
-	[
-		{ "Name":"Bruce Wayne", "Email":"darkknight@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Batman" }, 
-		{ "Name":"Peter Parker", "Email":"WebHead@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Spiderman" }, 
-		{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Francisco" }, 
-		{ "Name":"SpongeBob SquarePants", "Email":"krustykrab@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Sponge" }
-	]
-
-
-app.get('/listIndex', (request, response) => {
-	console.log('Calling "/listIndex" on the Node.js server.')
-	response.type('application/json')
-	response.send(JSON.stringify(listIndex, null, 4))
-})
-
-
-
 // Custom 404 page.
 app.use((request, response) => {
   response.type('text/plain')
