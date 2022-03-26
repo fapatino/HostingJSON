@@ -104,7 +104,7 @@ var batMan = {
 	"class":"cpsc-24700-001",
 	"room":"AS-104-A",
 	"startTime":"2 PM CT",
-	"seatNumber":"",
+	"seatNumber":"3",
 	"inPerson":[
 		"Monday",
 		"Wednesday"
@@ -136,7 +136,7 @@ var spiderMan = {
 	"class":"cpsc-24700-001",
 	"room":"AS-104-A",
 	"startTime":"2 PM CT",
-	"seatNumber":"",
+	"seatNumber":"16",
 	"inPerson":[
 	],
 	"virtual":[
@@ -180,6 +180,32 @@ app.get('/Francisco', (request, response) => {
 	response.type('application/json')
 	response.send(JSON.stringify(Francisco, null, 4))
 })
+
+// Return SpongeBob as JSON.
+var Sponge = {
+	"firstName":"SpongeBob",
+	"lastName":"SquarePants",
+	"preferredName":"Sponge",
+	"email":"krustkrab@lewisu.edu",
+	"city":"Bikini Bottom",
+	"favoriteHobby":"Working",
+	"startTime":"2 PM CT",
+	"seatNumber":"10",
+	"inPerson":[
+		"Monday",
+		"Wednesday",
+		"Friday"
+	],
+	"virtual":[
+	]
+}
+
+app.get('/Sponge', (request, response) => {
+	console.log('Calling "/Sponge" on the Node.js server.')
+	response.type('application/json')
+	response.send(JSON.stringify(Sponge, null, 4))
+})
+
 
 // Return listIndex as JSON.
 var listIndex = {
