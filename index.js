@@ -209,11 +209,10 @@ app.get('/Sponge', (request, response) => {
 
 // Return indexList
 var indexList = [
-	
-		{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Francisco" }, 
-		{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Batman" }, 
-		{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Sponge" }, 
-		{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Spiderman" } 
+	{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Francisco" }, 
+	{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Batman" }, 
+	{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Sponge" }, 
+	{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Spiderman" } 
 	
 ]
 
