@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+const { allowedNodeEnvironmentFlags } = require('process');
 app = express()
 
 var url = require('url');
@@ -204,6 +205,22 @@ app.get('/Sponge', (request, response) => {
 	console.log('Calling "/Sponge" on the Node.js server.')
 	response.type('application/json')
 	response.send(JSON.stringify(Sponge, null, 4))
+})
+
+// Return indexList
+var indexList = [
+	
+		{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Francisco" }, 
+		{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Batman" }, 
+		{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Sponge" }, 
+		{ "Name":"Francisco Patino", "Email":"franciscoapatino@lewisu.edu", "ContactURL":"https://faphostingjson.azurewebsites.net/Spiderman" } 
+	
+]
+
+app.get('/indexList', (request, response) => {
+	console.log('Calling "/indexList" on the Node.js server.')
+	response.type('application/json')
+	response.send(JSON.stringify(indexList, null, 4))
 })
 
 
